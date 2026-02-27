@@ -1,0 +1,275 @@
+/* ==========================================================================
+   Lockbox Security — Admin Settings
+   ========================================================================== */
+
+/* Header */
+.lockbox-wrap {
+	max-width: 860px;
+}
+
+.lockbox-header {
+	margin-bottom: 28px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #dcdcde;
+}
+
+.lockbox-header h1 {
+	margin-bottom: 4px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.lockbox-header h1 .dashicons {
+	font-size: 28px;
+	width: 28px;
+	height: 28px;
+	color: #2271b1;
+}
+
+.lockbox-tagline {
+	color: #646970;
+	margin-top: 4px;
+}
+
+/* Notices */
+.lockbox-notice {
+	background: #fff;
+	border-left: 4px solid #72aee6;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	padding: 12px 16px;
+	margin-bottom: 16px;
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.lockbox-notice p {
+	margin: 0 0 8px;
+}
+
+.lockbox-notice--recommend {
+	border-left-color: #00a32a;
+}
+
+.lockbox-notice--info {
+	border-left-color: #72aee6;
+	display: block;
+}
+
+.lockbox-dismiss-notice {
+	flex-shrink: 0;
+	white-space: nowrap;
+}
+
+/* Groups */
+.lockbox-group {
+	margin-bottom: 32px;
+}
+
+.lockbox-group__title {
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	color: #646970;
+	border-bottom: 1px solid #dcdcde;
+	padding-bottom: 8px;
+	margin-bottom: 0;
+}
+
+/* Module rows */
+.lockbox-module {
+	border-bottom: 1px solid #f0f0f1;
+	padding: 16px 0;
+}
+
+.lockbox-module:last-child {
+	border-bottom: none;
+}
+
+.lockbox-module__header {
+	display: flex;
+	align-items: flex-start;
+	gap: 0;
+	flex-direction: column;
+}
+
+.lockbox-toggle {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	min-height: 44px;
+	padding: 2px 0;
+}
+
+.lockbox-toggle input[type="checkbox"] {
+	width: 18px;
+	height: 18px;
+	min-width: 18px;
+	margin: 0;
+	cursor: pointer;
+	accent-color: #2271b1;
+}
+
+.lockbox-toggle__label {
+	font-weight: 600;
+	font-size: 14px;
+	color: #1d2327;
+}
+
+.lockbox-module__description {
+	margin: 2px 0 0 28px;
+	color: #646970;
+	font-size: 13px;
+}
+
+/* Module sub-fields */
+.lockbox-module__fields {
+	margin: 12px 0 4px 28px;
+	padding: 12px 16px;
+	background: #f9f9f9;
+	border-left: 3px solid #dcdcde;
+	border-radius: 0 4px 4px 0;
+}
+
+.lockbox-module__fields.is-hidden {
+	display: none;
+}
+
+.lockbox-field {
+	margin-bottom: 12px;
+}
+
+.lockbox-field:last-child {
+	margin-bottom: 0;
+}
+
+.lockbox-field__inline {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.lockbox-field__inline label {
+	font-weight: 500;
+	min-width: 0;
+}
+
+.lockbox-field__unit {
+	color: #646970;
+	font-size: 13px;
+}
+
+.lockbox-field__desc {
+	color: #646970;
+	font-size: 12px;
+	margin: 4px 0 6px;
+}
+
+.lockbox-field__notice {
+	margin: 0;
+	padding: 8px 12px;
+	background: #fef8ee;
+	border-left: 3px solid #dba617;
+	color: #5a4a00;
+	font-size: 12px;
+	border-radius: 0 3px 3px 0;
+}
+
+/* Role checkboxes */
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+fieldset legend {
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.lockbox-role-label {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 6px;
+	min-height: 28px;
+	cursor: pointer;
+}
+
+.lockbox-role-label input[type="checkbox"] {
+	width: 16px;
+	height: 16px;
+	margin: 0;
+	accent-color: #2271b1;
+}
+
+/* Save row */
+.lockbox-actions {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-top: 24px;
+	padding-top: 24px;
+	border-top: 1px solid #dcdcde;
+}
+
+.lockbox-save-status {
+	font-size: 13px;
+	color: #00a32a;
+}
+
+.lockbox-save-status.is-error {
+	color: #d63638;
+}
+
+/* Header inspector */
+.lockbox-inspector {
+	margin-top: 40px;
+	padding-top: 24px;
+	border-top: 2px solid #dcdcde;
+}
+
+.lockbox-inspector h2 {
+	margin-bottom: 6px;
+}
+
+.lockbox-inspector__desc {
+	color: #646970;
+	margin-bottom: 16px;
+}
+
+.lockbox-inspector__error {
+	color: #d63638;
+}
+
+.lockbox-inspector__table {
+	max-width: 700px;
+}
+
+.lockbox-inspector__table code {
+	font-size: 12px;
+}
+
+/* Badges */
+.lockbox-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.6;
+}
+
+.lockbox-badge--ok {
+	background: #edfaef;
+	color: #00a32a;
+}
+
+.lockbox-badge--missing {
+	background: #fcf0f1;
+	color: #d63638;
+}
